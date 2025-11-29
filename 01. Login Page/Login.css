@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: Arial;
+    border: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: rgb(44, 38, 56);
+}
+
+#Image-Block{
+    height: 96vh; 
+    width: 62vw;
+    background-color: blue;
+    margin-top: 2vh;
+    margin-left: 2vh; 
+    margin-Right: 3vh; 
+    box-shadow: 10px 0 15px -2px black;
+    background-image: url('College.png'); 
+    background-position: center; 
+    background-size: cover; 
+    display: inline-block; 
+}
+
+#Info-Block{
+    vertical-align: Top;
+    height: 96vh; 
+    width: 33vw;
+    margin-top: 2vh;
+    margin-left: 2vh; 
+    display: inline-block;
+}
+
+#Login{
+    color:white;
+    font-size: 3em;
+    font-weight: Bold;
+    margin-top: 30vh;
+    margin-left: 5vh;
+    margin-bottom: 4vh;
+}
+
+#UserID-Row{
+    margin-top: 4vh;
+    margin-left: 5vh;
+}
+
+#UserID{
+    display: inline-block; 
+    font-size: 1.5em;
+    font-weight: 500;
+    color: rgb(217,217,217);
+    margin-right: 4.7vh;
+    margin-top: 0.3vh;
+}
+
+#UserText {
+    vertical-align: top;
+    display: inline-block;
+}
+
+#UserText input {
+    font-size: 2vh;
+    height: 4vh;
+    width: 40vh;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: white;
+    padding-left: 2vh;
+    margin-left: -1.3vh;
+}
+
+#UserText input::placeholder {
+    color: #aaa;
+    padding-left: 0vh;
+    vertical-align: center;
+}
+
+#UserText input:focus,
+#PasswordField input:focus {
+    outline: none;
+    border: 1px solid white;
+}
+
+/* Hover effect */
+#UserText input:hover,
+#PasswordField input:hover {
+    border: 1px solid white;
+}
+
+#Password-Row {
+    margin-top: 2vh;
+    margin-left: 5vh;
+    margin-bottom: 1vh;
+}
+
+#Password {
+    display: inline-block; 
+    font-size: 1.5em;
+    font-weight: 500;
+    color: rgb(217,217,217);
+    margin-right: 0.2vh;
+    margin-right: 0.8vh;
+}
+
+#PasswordField {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    width: 40vh;
+    height: 4vh;
+}
+
+#PasswordField input {
+    font-size: 2vh;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: white;
+    padding-left: 2vh;
+    padding-right: 5vh;
+    border: none;
+    box-sizing: border-box;
+}
+
+#PasswordField input::placeholder {
+    color: #aaa;
+}
+
+#toggle-password {
+    position: absolute;
+    right: 1.2vh;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    height: 2.5vh;
+    width: 2.5vh;
+    z-index: 2;
+}
+
+#toggle-password img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    filter: brightness(85%);
+}
+
+#ForgotPassword a {
+    color: rgb(157,145,190);
+    font-size: 2vh;
+    text-decoration: none;
+    margin-left: 41.5vh;
+    font-weight: bold;
+}
+
+#ForgotPassword a:hover {
+    text-decoration: underline;
+    color: rgb(115, 105, 150);
+}
+
+#Login-Button {
+    font-size: 2vh;
+    font-weight:600;
+    background-color: rgb(109, 84, 181);
+    color: white;
+    border: none;
+    border-radius: 1vh;
+    padding: 1vh 3vh;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 5vh;
+    margin-top: 2vh;
+    width: 53vh;
+    display: block;
+}
+
+#Login-Button:hover {
+    background-color: rgb(180, 165, 225);
+}
+
+#Apply-Row{
+    margin-top: 23vh;
+    margin-left: 5.2vh;
+    display: flex;
+    gap: 1vh;
+}
+
+#question{
+    vertical-align: top;
+    color: white;
+    display: inline-block;
+    font-weight: 500;
+    margin-top: 0.2vh;
+    font-size: 2vh;
+}
+
+#ApplyNow a {
+    vertical-align: top;
+    display:inline-block;
+    color: rgb(157,145,190);
+    font-size: 2vh;
+    text-decoration: none;
+    margin-left: 0vh;
+    font-weight: bold;
+}
+
+#ApplyNow a:hover {
+    text-decoration: underline;
+    color: rgb(115, 105, 150);
+}
