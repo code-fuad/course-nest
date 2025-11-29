@@ -1,0 +1,708 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: Arial;
+    border: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: rgb(44, 38, 56);
+}
+
+#Menu{
+    height: 96vh;
+    width: 20vw;
+    margin-top: 2vh;
+    margin-left: 2vh;
+    background-color: rgba(56,51,68.85);
+    box-shadow: 5px 5px 10px black;
+    display: inline-block;
+}
+
+#Home-Link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+#Home-Button {
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    padding: 1vh;
+    cursor: pointer;
+    height: 7vh;
+    width: 7vh;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5.5vh;
+    margin-top: 5vh;
+}
+
+#Home-Button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* subtle hover effect */
+}
+
+#Home-Button img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    filter: brightness(85%);
+}
+
+#Profile-Button {
+    background-color: transparent;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 1vh 2vh;
+    border-radius: 1vh;
+    transition: background-color 0.3s ease;
+    margin-left: 4.8vh;
+    margin-top:10vh;
+    height: 5.5vh;
+    width: 32vh;
+}
+
+#Profile-Button:hover {
+    background-color: rgb(81, 67, 122);
+}
+
+#Profile-Button img {
+    height: 3.5vh;
+    width: 3.5vh;
+    margin-right: 2vh;
+    object-fit: contain;
+    filter: brightness(85%);
+}
+
+#Profile-Button span {
+    color: rgb(217,217,217);
+    font-size: 2.5vh;
+    font-weight: 500;
+}
+
+#Course-Button {
+    background-color: transparent;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 1vh 2vh;
+    padding-left:1.5vh;
+    border-radius: 1vh;
+    transition: background-color 0.3s ease;
+    margin-left: 4.8vh;
+    margin-top:10vh;
+    height: 5.5vh;
+    width: 32vh;
+}
+
+#Course-Button:hover {
+    background-color: rgb(81, 67, 122);
+}
+
+#Course-Button img {
+    height: 4,5vh;
+    width: 4.5vh;
+    margin-right: 1.5vh;
+    object-fit: contain;
+    filter: brightness(85%);
+}
+
+#Course-Button span {
+    color: rgb(217,217,217);
+    font-size: 2.5vh;
+    font-weight: 500;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 4.8vh;
+    margin-top: 2vh;
+}
+
+/* Advising Button (Trigger) */
+#Advising-Button {
+    background-color: transparent;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 1vh 2vh;
+    padding-left: 2.5vh;
+    border-radius: 1vh;
+    transition: background-color 0.3s ease;
+    height: 5.5vh;
+    width: 32vh;
+}
+
+.dropdown:hover #Advising-Button {
+    background-color: rgb(81, 67, 122);
+}
+
+#Advising-Button img {
+    height: 3vh;
+    width: 3vh;
+    margin-right: 2vh;
+    object-fit: contain;
+    filter: brightness(85%);
+}
+
+#Advising-Button span {
+    color: rgb(217,217,217);
+    font-size: 2.5vh;
+    font-weight: 500;
+}
+
+/* Dropdown options container */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 6vh;
+    left: 0;
+    background-color: rgb(96,92,105);
+    border-radius: 1vh;
+    min-width: 32vh;
+    z-index: 100;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
+    padding: 1vh 0;
+}
+
+/* Individual option */
+.dropdown-option {
+    display: flex;
+    align-items: center;
+    padding: 1vh 2vh;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-option img {
+    height: 4vh;
+    width: 4vh;
+    margin-right: 1.5vh;
+    object-fit: contain;
+    filter: brightness(85%);
+}
+
+.dropdown-option span {
+    color: rgb(140,137,147);
+    font-size: 2.3vh;
+    font-weight: 500;
+}
+
+/* Hover effect for options */
+.dropdown-option:hover {
+    background-color: rgb(140,137,147);
+}
+
+.dropdown-option:hover span {
+    color: white;
+}
+
+/* Show dropdown when .active class is added by JS */
+.dropdown.active .dropdown-content {
+    display: block;
+}
+
+
+#registration img {
+    height: 5vh;
+    width: 5vh;
+    margin-left: -0.5vh;
+    margin-right: 1vh;
+}
+
+#offered img {
+    height: 3.5vh;
+    width: 3.5vh;
+    margin-left: 0.3vh;
+    margin-right: 1.7vh;
+}
+
+#request img {
+    height: 3.1vh;
+    width: 3.1vh;
+    margin-left: 0.3vh;
+    margin-right: 2.1vh;
+}
+
+#schedule img {
+    height: 3.5vh;
+    width: 3vh;
+    margin-left: 0.3vh;
+    margin-right: 2.2vh;
+}
+
+#Payment-Button {
+    background-color: transparent;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 1vh 2vh;
+    border-radius: 1vh;
+    transition: background-color 0.3s ease;
+    margin-left: 4.8vh;
+    margin-top:2vh;
+    height: 5.5vh;
+    width: 32vh;
+}
+
+#Payment-Button:hover {
+    background-color: rgb(81, 67, 122);
+}
+
+#Payment-Button img {
+    height: 3.5vh;
+    width: 3.5vh;
+    margin-right: 2vh;
+    object-fit: contain;
+    filter: brightness(85%);
+}
+
+#Payment-Button span {
+    color: rgb(217,217,217);
+    font-size: 2.5vh;
+    font-weight: 500;
+}
+
+#Question-Button {
+    background-color: transparent;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 1vh 2vh;
+    border-radius: 1vh;
+    transition: background-color 0.3s ease;
+    margin-left: 4.8vh;
+    margin-top:2vh;
+    height: 5.5vh;
+    width: 32vh;
+}
+
+#Question-Button:hover {
+    background-color: rgb(81, 67, 122);
+}
+
+#Question-Button img {
+    height: 3.5vh;
+    width: 3.5vh;
+    margin-right: 2vh;
+    object-fit: contain;
+    filter: brightness(85%);
+}
+
+#Question-Button span {
+    color: rgb(217,217,217);
+    font-size: 2.5vh;
+    font-weight: 500;
+}
+
+#LogOut-Button {
+    background-color: transparent;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 1vh 2vh;
+    border-radius: 1vh;
+    transition: background-color 0.3s ease;
+    margin-left: 4.8vh;
+    margin-top:52vh;
+    height: 5.5vh;
+    width: 32vh;
+}
+
+#LogOut-Button:hover {
+    background-color: rgb(81, 67, 122);
+}
+
+#LogOut-Button img {
+    height: 3.5vh;
+    width: 3.5vh;
+    margin-right: 2vh;
+    object-fit: contain;
+    filter: brightness(85%);
+}
+
+#LogOut-Button span {
+    color: rgb(217,217,217);
+    font-size: 2.5vh;
+    font-weight: 500;
+}
+
+#coursePicker
+{
+    height: 50vh;
+    width: 60vw;
+    margin-left: 55vh;
+    margin-top: 0vh;
+}
+
+#Text
+{
+    color: white;
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-left: 55vh;
+    margin-top: 5vh;
+}
+
+#courseKeeper
+{
+    height: 30vh;
+    width: 60vw;
+    margin-left: 55vh;
+    margin-top: 2vh;
+}
+
+/* ====== Stacked layout and aesthetic tables (no changes to Menu) ====== */
+.cr-container{
+  width: min(1100px, 94%);
+  margin-top: 10vh;
+  margin-left: 54vh;
+}
+
+.cr-section{
+  margin: 0 0 2.2rem 0; /* the gap between tables */
+}
+
+.cr-card{
+  background:
+    radial-gradient(120% 140% at 0% 0%, rgba(255,255,255,.06), rgba(255,255,255,.02) 55%),
+    linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,0));
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 14px;
+  box-shadow: 0 12px 26px rgba(0,0,0,.28);
+  padding: 1rem 1.1rem;
+}
+
+.cr-card-title{
+  font-weight: 800;
+  letter-spacing: .2px;
+  color: #fff;
+  margin: 0 0 .7rem 0;
+}
+
+.cr-table-wrap{
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(255,255,255,.03);
+}
+
+.cr-table{
+  width: 100%;
+  border-collapse: collapse;
+  color: #fff;
+  font-size: 0.98rem;
+}
+
+.cr-table thead th{
+  background: #6D54B5;
+  color: #fff;
+  text-align: left;
+  padding: .85rem 1rem;
+  font-weight: 700;
+  position: sticky;
+  top: 0; /* helpful if container scrolls */
+}
+
+.cr-table tbody td{
+  padding: .7rem 1rem;
+  border-top: 1px solid rgba(255,255,255,.12);
+}
+
+.cr-table tbody tr:hover{
+  background: rgba(109,84,181,.16);
+}
+
+.cr-row-alt{
+  background: rgba(255,255,255,.06);
+}
+
+/* Small, clean action buttons for Take/Drop */
+.cr-mini-btn{
+  padding: .4rem .75rem;
+  border: 1px solid rgba(255,255,255,.22);
+  border-radius: 10px;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: background .18s ease, border-color .18s ease, transform .12s ease;
+}
+.cr-mini-btn:hover{
+  background: rgba(255,255,255,.08);
+  border-color: #fff;
+  transform: translateY(-1px);
+}
+
+/* Save area */
+.cr-save{
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  flex-wrap: wrap;
+}
+.cr-btn{
+  padding: .6rem 1rem;
+  border: 1px solid rgba(255,255,255,.22);
+  border-radius: 10px;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: background .18s ease, border-color .18s ease, transform .12s ease;
+}
+.cr-btn:hover{
+  background: rgba(255,255,255,.08);
+  border-color: #fff;
+  transform: translateY(-1px);
+}
+.cr-note{
+  opacity: .65;
+  font-size: .9rem;
+}
+
+/* Optional: make tables a bit narrower on huge screens */
+@media (min-width: 1300px){
+  .cr-container{ width: 1100px; }
+}
+
+/* ===== FIX: make stacked tables use the new aesthetics ===== */
+
+/* 1) Neutralize old positioning so the cards/tables can render properly */
+#coursePicker,
+#courseKeeper{
+  width: min(1100px, 94%) !important;
+  margin: 0 auto 28px auto !important; /* center + gap */
+  height: auto !important;
+  /* remove old offsets */
+  margin-left: auto !important;
+  margin-top: 0 !important;
+}
+
+/* 2) Ensure our card wrapper look always applies inside both sections */
+#coursePicker .cr-card,
+#courseKeeper .cr-card{
+  background:
+    radial-gradient(120% 140% at 0% 0%, rgba(255,255,255,.06), rgba(255,255,255,.02) 55%),
+    linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,0));
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 14px;
+  box-shadow: 0 12px 26px rgba(0,0,0,.28);
+  padding: 1rem 1.1rem;
+}
+
+/* 3) Table aesthetics — target both .cr-table AND a plain <table> fallback */
+#coursePicker .cr-table,
+#courseKeeper .cr-table,
+#coursePicker table,
+#courseKeeper table{
+  width: 100% !important;
+  border-collapse: collapse !important;
+  color: #fff !important;
+  font-size: 0.98rem !important;
+}
+
+/* Header */
+#coursePicker .cr-table thead th,
+#courseKeeper .cr-table thead th,
+#coursePicker thead th,
+#courseKeeper thead th{
+  background: #6D54B5 !important;
+  color: #fff !important;
+  text-align: left !important;
+  padding: .85rem 1rem !important;
+  font-weight: 700 !important;
+}
+
+/* Body cells */
+#coursePicker .cr-table tbody td,
+#courseKeeper .cr-table tbody td,
+#coursePicker tbody td,
+#courseKeeper tbody td{
+  padding: .7rem 1rem !important;
+  border-top: 1px solid rgba(255,255,255,.12) !important;
+}
+
+/* Hover & alternating rows */
+#coursePicker .cr-table tbody tr:hover,
+#courseKeeper .cr-table tbody tr:hover,
+#coursePicker tbody tr:hover,
+#courseKeeper tbody tr:hover{
+  background: rgba(109,84,181,.16) !important;
+}
+#coursePicker .cr-row-alt,
+#courseKeeper .cr-row-alt{
+  background: rgba(255,255,255,.06) !important;
+}
+
+/* Action buttons (Take/Drop) */
+#coursePicker .cr-mini-btn,
+#courseKeeper .cr-mini-btn{
+  padding: .4rem .75rem !important;
+  border: 1px solid rgba(255,255,255,.22) !important;
+  border-radius: 10px !important;
+  background: transparent !important;
+  color: #fff !important;
+  cursor: pointer !important;
+  transition: background .18s ease, border-color .18s ease, transform .12s ease !important;
+}
+#coursePicker .cr-mini-btn:hover,
+#courseKeeper .cr-mini-btn:hover{
+  background: rgba(255,255,255,.08) !important;
+  border-color: #fff !important;
+  transform: translateY(-1px) !important;
+}
+
+/* Save area spacing */
+#courseKeeper .cr-save{
+  margin-top: 1rem !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: .8rem !important;
+  flex-wrap: wrap !important;
+}
+#courseKeeper .cr-btn{
+  padding: .6rem 1rem !important;
+  border: 1px solid rgba(255,255,255,.22) !important;
+  border-radius: 10px !important;
+  background: transparent !important;
+  color: #fff !important;
+  cursor: pointer !important;
+}
+#courseKeeper .cr-btn:hover{
+  background: rgba(255,255,255,.08) !important;
+  border-color: #fff !important;
+  transform: translateY(-1px) !important;
+}
+#courseKeeper .cr-note{
+  opacity: .65 !important;
+  font-size: .9rem !important;
+}
+
+  /* —— Layout stays to the right of the left Menu ——————————————— */
+  body .cr-container{     width: min(1100px, 94%);
+    margin-top: -95vh;
+    margin-left: 1vh; }
+
+  /* Title alignment (unchanged visual) */
+  body #Text{ margin-left:55vh !important; margin-top:5vh !important; }
+
+  /* Keep both tables on one page where the Menu ends (right side) */
+  body #coursePicker,
+  body #courseKeeper{
+    width:60vw !important;
+    margin-left:55vh !important;   /* aligns with your title */
+    margin-top:2vh !important;     /* small gap */
+    height:auto !important;        /* let content define height */
+  }
+
+  /* ——— Make the FIRST table (Course Picker) scrollable ——— */
+  body #coursePicker .cr-table-wrap{
+    max-height:48vh !important;    /* adjust if you want more/less rows visible */
+    overflow-y:auto !important;
+    -webkit-overflow-scrolling:touch;
+    border:1px solid rgba(255,255,255,.14);
+    border-radius:12px;
+    background:rgba(255,255,255,.03);
+  }
+
+  /* Optional (keeps second table compact but still on page)
+     — comment out if you don't want it to scroll */
+  body #courseKeeper .cr-table-wrap{
+    max-height:34vh !important;
+    overflow-y:auto !important;
+    -webkit-overflow-scrolling:touch;
+    border:1px solid rgba(255,255,255,.14);
+    border-radius:12px;
+    background:rgba(255,255,255,.03);
+  }
+
+  /* —— Card look for both areas —— */
+  body #coursePicker .cr-card,
+  body #courseKeeper .cr-card{
+    background:
+      radial-gradient(120% 140% at 0% 0%, rgba(255,255,255,.06), rgba(255,255,255,.02) 55%),
+      linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,0));
+    border:1px solid rgba(255,255,255,.14);
+    border-radius:14px;
+    box-shadow:0 12px 26px rgba(0,0,0,.28);
+    padding:1rem 1.1rem;
+  }
+  body .cr-card-title{ font-weight:800; color:#fff; margin:0 0 .7rem 0; }
+
+  /* —— Table aesthetics (header, rows, hover) —— */
+  body #coursePicker .cr-table,
+  body #courseKeeper .cr-table,
+  body #coursePicker table,
+  body #courseKeeper table{
+    width:100% !important;
+    border-collapse:collapse !important;
+    color:#fff !important;
+    font-size:0.98rem !important;
+    table-layout:auto !important;
+  }
+  body #coursePicker thead th,
+  body #courseKeeper thead th{
+    background:#6D54B5 !important;
+    color:#fff !important;
+    text-align:left !important;
+    padding:.85rem 1rem !important;
+    font-weight:700 !important;
+    position:sticky; top:0; z-index:1;  /* sticky while scrolling */
+  }
+  body #coursePicker tbody td,
+  body #courseKeeper tbody td{
+    padding:.7rem 1rem !important;
+    border-top:1px solid rgba(255,255,255,.12) !important;
+  }
+  body #coursePicker tbody tr.cr-row-alt,
+  body #courseKeeper tbody tr.cr-row-alt{ background:rgba(255,255,255,.06) !important; }
+  body #coursePicker tbody tr:hover,
+  body #courseKeeper tbody tr:hover{ background:rgba(109,84,181,.16) !important; }
+
+  /* —— Action buttons —— */
+  body .cr-mini-btn{
+    padding:.4rem .75rem !important;
+    border:1px solid rgba(255,255,255,.22) !important;
+    border-radius:10px !important;
+    background:transparent !important;
+    color:#fff !important;
+    cursor:pointer !important;
+    transition:background .18s ease, border-color .18s ease, transform .12s ease !important;
+  }
+  body .cr-mini-btn:hover{
+    background:rgba(255,255,255,.08) !important;
+    border-color:#fff !important;
+    transform:translateY(-1px) !important;
+  }
+
+  /* —— Save area —— */
+  body #courseKeeper .cr-save{
+    margin-top:1rem !important; display:flex !important; align-items:center !important; gap:.8rem !important; flex-wrap:wrap !important;
+  }
+  body #courseKeeper .cr-btn{
+    padding:.6rem 1rem !important; border:1px solid rgba(255,255,255,.22) !important; border-radius:10px !important;
+    background:transparent !important; color:#fff !important; cursor:pointer !important;
+    transition:background .18s ease, border-color .18s ease, transform .12s ease !important;
+  }
+  body #courseKeeper .cr-btn:hover{ background:rgba(255,255,255,.08) !important; border-color:#fff !important; transform:translateY(-1px) !important; }
+  body #courseKeeper .cr-note{ opacity:.65 !important; font-size:.9rem !important; }
+
+.div.cr-table-wrap{
+  margin-top: 30vh;
+}
+
+.div.cr-container{
+  margin-top: 30vh;
+}
