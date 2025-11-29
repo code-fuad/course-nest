@@ -1,0 +1,1145 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: Arial;
+    border: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: rgb(44, 38, 56);
+}
+
+#First-Column{
+    vertical-align: top;
+    height:96vh; 
+    width:39vw;
+    display:inline-block; 
+}
+
+#Second-Column{
+    vertical-align: top;
+    height:96vh; 
+    width:30vw;
+    display:inline-block; 
+}
+
+#Third-Column{
+    vertical-align: top;
+    height:96vh; 
+    width:28vw;
+    display: inline-block; 
+}
+
+#Recovery{
+    display: inline-block;
+    color:white;
+    font-size: 2em;
+    font-weight: Bold;
+    margin-top: 10vh;
+    margin-left: 8vh;
+    margin-bottom: 2vh;
+}
+
+#Personal{
+    display: inline-block;
+    color: rgb(127,127,127);
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 1vh;
+    margin-left: 8vh;
+    margin-bottom: 2vh;
+}
+
+
+#FirstName
+{
+    width: 60vh;
+}
+
+#FirstNameText
+{
+    color:white;
+    font-size: 2vh;
+    font-weight: 700;
+}
+
+.FirstNameField
+{
+    width: 40vh;
+}
+
+#Name{
+    margin-left: 8.2vh;
+}
+
+#GenderField{
+    display: inline-block; 
+}
+
+#GenderField input {
+    font-size: 2vh;
+    height: 4.5vh;
+    width: 30vh;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: white;
+    padding-left: 2vh;
+    margin-left: 8vh;
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+    display: inline-block
+}
+
+#GenderField input::placeholder {
+    color: #aaa;
+    padding-left: 0vh;
+    vertical-align: center;
+}
+
+#GenderField input:focus{
+    outline: none;
+    border: 1px solid white;
+}
+
+#GenderField input:hover {
+    border: 1px solid white;
+}
+
+#LastName{
+    display: inline-block;
+    margin-left: 1vh; 
+}
+
+#LastName input {
+    font-size: 2vh;
+    height: 4.5vh;
+    width: 30vh;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: white;
+    padding-left: 2vh;
+    margin-left: -0.4vh;
+    margin-bottom: 1vh;
+    display: inline-block;
+}
+
+#LastName input::placeholder {
+    color: #aaa;
+    padding-left: 0vh;
+    vertical-align: center;
+}
+
+#LastName input:focus{
+    outline: none;
+    border: 1px solid white;
+}
+
+#LastName input:hover {
+    border: 1px solid white;
+}
+
+#StudentContact{
+    display: inline-block;
+    margin-left: 1vh; 
+}
+
+#StudentContact input {
+    font-size: 2vh;
+    height: 4.5vh;
+    width: 61vh;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: white;
+    padding-left: 2vh;
+    margin-left: 7.2vh;
+    margin-bottom: 1vh;
+    display: inline-block;
+}
+
+#StudentContact input::placeholder {
+    color: #aaa;
+    padding-left: 0vh;
+    vertical-align: center;
+}
+
+#StudentContact input:focus{
+    outline: none;
+    border: 1px solid white;
+}
+
+#StudentContact input:hover {
+    border: 1px solid white;
+}
+
+#FirstName{
+    display: inline-block; 
+}
+
+#FirstName input {
+    font-size: 2vh;
+    height: 4.5vh;
+    width: 30vh;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: white;
+    padding-left: 2vh;
+    margin-left: 0vh;
+    margin-bottom: 1vh;
+    display: inline-block
+}
+
+#FirstName input::placeholder {
+    color: #aaa;
+    padding-left: 0vh;
+    vertical-align: center;
+}
+
+#FirstName input:focus{
+    outline: none;
+    border: 1px solid white;
+}
+
+#FirstName input:hover {
+    border: 1px solid white;
+}
+
+#BloodGroup{
+    display: inline-block; 
+}
+
+#BloodGroup input {
+    font-size: 2vh;
+    height: 4.5vh;
+    width: 30vh;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: white;
+    padding-left: 2vh;
+    margin-left: 0.6vh;
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+    display: inline-block
+}
+
+#BloodGroup input::placeholder {
+    color: #aaa;
+    padding-left: 0vh;
+    vertical-align: center;
+}
+
+#BloodGroup input:focus{
+    outline: none;
+    border: 1px solid white;
+}
+
+#BloodGroup input:hover {
+    border: 1px solid white;
+}
+
+#Identity{
+    display: inline-block;
+    margin-left: 1vh; 
+    margin-top: 1vh;
+}
+
+#Identity input {
+    font-size: 2vh;
+    height: 4.5vh;
+    width: 61vh;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: white;
+    padding-left: 2vh;
+    margin-left: 7.2vh;
+    margin-bottom: 1vh;
+    display: inline-block;
+}
+
+#Identity input::placeholder {
+    color: #aaa;
+    padding-left: 0vh;
+    vertical-align: center;
+}
+
+#Identity input:focus{
+    outline: none;
+    border: 1px solid white;
+}
+
+#Identity input:hover {
+    border: 1px solid white;
+}
+
+#DOB{
+    display: inline-block; 
+}
+
+#DOB input {
+    font-size: 2vh;
+    height: 4.5vh;
+    width: 61.1vh;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: white;
+    padding-left: 2vh;
+    margin-left: 8vh;
+    margin-top: 0vh;
+    margin-bottom: 6vh;
+    display: inline-block
+}
+
+#DOB input::placeholder {
+    color: #aaa;
+    padding-left: 0vh;
+    vertical-align: center;
+}
+
+#DOB input:focus{
+    outline: none;
+    border: 1px solid white;
+}
+
+#DOB input:hover {
+    border: 1px solid white;
+}
+
+#Father{
+    display: inline-block;
+    margin-left: 1vh; 
+    margin-top: 1vh;
+}
+
+#Father input {
+    font-size: 2vh;
+    height: 4.5vh;
+    width: 61vh;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: white;
+    padding-left: 2vh;
+    margin-left: 7.2vh;
+    margin-bottom: 0vh;
+    display: inline-block;
+}
+
+#Father input::placeholder {
+    color: #aaa;
+    padding-left: 0vh;
+    vertical-align: center;
+}
+
+#Father input:focus{
+    outline: none;
+    border: 1px solid white;
+}
+
+#Father input:hover {
+    border: 1px solid white;
+}
+
+#Mother{
+    display: inline-block;
+    margin-left: 1vh; 
+    margin-top: 1vh;
+}
+
+#Mother input {
+    font-size: 2vh;
+    height: 4.5vh;
+    width: 61vh;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: white;
+    padding-left: 2vh;
+    margin-left: 7.2vh;
+    margin-bottom: 0vh;
+    display: inline-block;
+}
+
+#Mother input::placeholder {
+    color: #aaa;
+    padding-left: 0vh;
+    vertical-align: center;
+}
+
+#Mother input:focus{
+    outline: none;
+    border: 1px solid white;
+}
+
+#Mother input:hover {
+    border: 1px solid white;
+}
+
+#Guardian{
+    display: inline-block;
+    margin-left: 1vh; 
+    margin-top: 1vh;
+}
+
+#Guardian input {
+    font-size: 2vh;
+    height: 4.5vh;
+    width: 61vh;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: white;
+    padding-left: 2vh;
+    margin-left: 7.2vh;
+    margin-bottom: 0vh;
+    display: inline-block;
+}
+
+#Guardian input::placeholder {
+    color: #aaa;
+    padding-left: 0vh;
+    vertical-align: center;
+}
+
+#Guardian input:focus{
+    outline: none;
+    border: 1px solid white;
+}
+
+#Guardian input:hover {
+    border: 1px solid white;
+}
+
+#GuardianContact{
+    display: inline-block;
+    margin-left: 1vh; 
+    margin-top: 1vh;
+}
+
+#GuardianContact input {
+    font-size: 2vh;
+    height: 4.5vh;
+    width: 61vh;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: white;
+    padding-left: 2vh;
+    margin-left: 7.2vh;
+    margin-bottom: 0vh;
+    display: inline-block;
+}
+
+#GuardianContact input::placeholder {
+    color: #aaa;
+    padding-left: 0vh;
+    vertical-align: center;
+}
+
+#GuardianContact input:focus{
+    outline: none;
+    border: 1px solid white;
+}
+
+#GuardianContact input:hover {
+    border: 1px solid white;
+}
+
+#Address{
+    display: inline-block;
+    margin-left: 1vh; 
+    margin-top: 1vh;
+}
+
+#Address input {
+    font-size: 2vh;
+    height: 4.5vh;
+    width: 61vh;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: white;
+    padding-left: 2vh;
+    margin-left: 7.2vh;
+    margin-bottom: 0vh;
+    display: inline-block;
+}
+
+#Address input::placeholder {
+    color: #aaa;
+    padding-left: 0vh;
+    vertical-align: center;
+}
+
+#Address input:focus{
+    outline: none;
+    border: 1px solid white;
+}
+
+#Address input:hover {
+    border: 1px solid white;
+}
+
+#Academic{
+    display: inline-block;
+    color: rgb(127,127,127);
+    font-size: 1.7em;
+    font-weight: 600;
+    margin-top: 18vh;
+    margin-left: 0vh;
+    margin-bottom: 2vh;
+}
+
+#SSC{
+    margin-left: 8.2vh;
+}
+
+#SSCyear{
+    display: inline-block; 
+}
+
+#SSCyear input {
+    font-size: 2vh;
+    height: 4.5vh;
+    width: 25vh;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: white;
+    padding-left: 2vh;
+    margin-left: -8.2vh;
+    margin-bottom: 1vh;
+    display: inline-block
+}
+
+#SSCyear input::placeholder {
+    color: #aaa;
+    padding-left: 0vh;
+    vertical-align: center;
+}
+
+#SSCyear input:focus{
+    outline: none;
+    border: 1px solid white;
+}
+
+#SSCyear input:hover {
+    border: 1px solid white;
+}
+
+#SSCgpa{
+    display: inline-block;
+    margin-left: 1vh; 
+}
+
+#SSCgpa input {
+    font-size: 2vh;
+    height: 4.5vh;
+    width: 25vh;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: white;
+    padding-left: 2vh;
+    margin-left: -0.4vh;
+    margin-bottom: 1vh;
+    display: inline-block;
+}
+
+#SSCgpa input::placeholder {
+    color: #aaa;
+    padding-left: 0vh;
+    vertical-align: center;
+}
+
+#SSCgpa input:focus{
+    outline: none;
+    border: 1px solid white;
+}
+
+#SSCgpa input:hover {
+    border: 1px solid white;
+}
+
+#SSCroll{
+    display: inline-block;
+    margin-left: 0vh; 
+    margin-top: 0vh;
+}
+
+#SSCroll input {
+    font-size: 2vh;
+    height: 4.5vh;
+    width: 51vh;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: white;
+    padding-left: 2vh;
+    margin-left: 0vh;
+    margin-bottom: 0vh;
+    display: inline-block;
+}
+
+#SSCroll input::placeholder {
+    color: #aaa;
+    padding-left: 0vh;
+    vertical-align: center;
+}
+
+#SSCroll input:focus{
+    outline: none;
+    border: 1px solid white;
+}
+
+#SSCroll input:hover {
+    border: 1px solid white;
+}
+
+#SSCreg{
+    display: inline-block;
+    margin-left: 0vh; 
+    margin-top: 1vh;
+}
+
+#SSCreg input {
+    font-size: 2vh;
+    height: 4.5vh;
+    width: 51vh;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: white;
+    padding-left: 2vh;
+    margin-left: 0vh;
+    margin-bottom: 0vh;
+    display: inline-block;
+}
+
+#SSCreg input::placeholder {
+    color: #aaa;
+    padding-left: 0vh;
+    vertical-align: center;
+}
+
+#SSCreg input:focus{
+    outline: none;
+    border: 1px solid white;
+}
+
+#SSCreg input:hover {
+    border: 1px solid white;
+}
+
+#SSCin{
+    display: inline-block;
+    margin-left: 0vh; 
+    margin-top: 1vh;
+}
+
+#SSCin input {
+    font-size: 2vh;
+    height: 4.5vh;
+    width: 51vh;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: white;
+    padding-left: 2vh;
+    margin-left: 0vh;
+    margin-bottom: 6vh;
+    display: inline-block;
+}
+
+#SSCin input::placeholder {
+    color: #aaa;
+    padding-left: 0vh;
+    vertical-align: center;
+}
+
+#SSCin input:focus{
+    outline: none;
+    border: 1px solid white;
+}
+
+#SSCin input:hover {
+    border: 1px solid white;
+}
+
+#HSC{
+    margin-left: 8.2vh;
+}
+
+#HSCyear{
+    display: inline-block; 
+}
+
+#HSCyear input {
+    font-size: 2vh;
+    height: 4.5vh;
+    width: 25vh;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: white;
+    padding-left: 2vh;
+    margin-left: -8.2vh;
+    margin-bottom: 1vh;
+    display: inline-block
+}
+
+#HSCyear input::placeholder {
+    color: #aaa;
+    padding-left: 0vh;
+    vertical-align: center;
+}
+
+#HSCyear input:focus{
+    outline: none;
+    border: 1px solid white;
+}
+
+#HSCyear input:hover {
+    border: 1px solid white;
+}
+
+#HSCgpa{
+    display: inline-block;
+    margin-left: 1vh; 
+}
+
+#HSCgpa input {
+    font-size: 2vh;
+    height: 4.5vh;
+    width: 25vh;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: white;
+    padding-left: 2vh;
+    margin-left: -0.4vh;
+    margin-bottom: 1vh;
+    display: inline-block;
+}
+
+#HSCgpa input::placeholder {
+    color: #aaa;
+    padding-left: 0vh;
+    vertical-align: center;
+}
+
+#HSCgpa input:focus{
+    outline: none;
+    border: 1px solid white;
+}
+
+#HSCgpa input:hover {
+    border: 1px solid white;
+}
+
+#HSCroll{
+    display: inline-block;
+    margin-left: 0vh; 
+    margin-top: 0vh;
+}
+
+#HSCroll input {
+    font-size: 2vh;
+    height: 4.5vh;
+    width: 51vh;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: white;
+    padding-left: 2vh;
+    margin-left: 0vh;
+    margin-bottom: 0vh;
+    display: inline-block;
+}
+
+#HSCroll input::placeholder {
+    color: #aaa;
+    padding-left: 0vh;
+    vertical-align: center;
+}
+
+#HSCroll input:focus{
+    outline: none;
+    border: 1px solid white;
+}
+
+#HSCroll input:hover {
+    border: 1px solid white;
+}
+
+#HSCreg{
+    display: inline-block;
+    margin-left: 0vh; 
+    margin-top: 1vh;
+}
+
+#HSCreg input {
+    font-size: 2vh;
+    height: 4.5vh;
+    width: 51vh;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: white;
+    padding-left: 2vh;
+    margin-left: 0vh;
+    margin-bottom: 0vh;
+    display: inline-block;
+}
+
+#HSCreg input::placeholder {
+    color: #aaa;
+    padding-left: 0vh;
+    vertical-align: center;
+}
+
+#HSCreg input:focus{
+    outline: none;
+    border: 1px solid white;
+}
+
+#HSCreg input:hover {
+    border: 1px solid white;
+}
+
+#HSCin{
+    display: inline-block;
+    margin-left: 0vh; 
+    margin-top: 1vh;
+}
+
+#HSCin input {
+    font-size: 2vh;
+    height: 4.5vh;
+    width: 51vh;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: white;
+    padding-left: 2vh;
+    margin-left: 0vh;
+    margin-bottom: 6.5vh;
+    display: inline-block;
+}
+
+#HSCin input::placeholder {
+    color: #aaa;
+    padding-left: 0vh;
+    vertical-align: center;
+}
+
+#HSCin input:focus{
+    outline: none;
+    border: 1px solid white;
+}
+
+#HSCin input:hover {
+    border: 1px solid white;
+}
+
+#ECA{
+    display: inline-block;
+    margin-left: 0vh; 
+    margin-top: 1vh;
+}
+
+#ECA input {
+    font-size: 2vh;
+    height: 4.5vh;
+    width: 51vh;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: white;
+    padding-left: 2vh;
+    margin-left: 0vh;
+    margin-bottom: 6vh;
+    display: inline-block;
+}
+
+#ECA input::placeholder {
+    color: #aaa;
+    padding-left: 0vh;
+    vertical-align: center;
+}
+
+#ECA input:focus{
+    outline: none;
+    border: 1px solid white;
+}
+
+#ECA input:hover {
+    border: 1px solid white;
+}
+
+#Degree{
+    display: inline-block;
+    color: rgb(127,127,127);
+    font-size: 1.7em;
+    font-weight: 600;
+    margin-top: 18vh;
+    margin-left: 0vh;
+    margin-bottom: 1vh;
+}
+
+#Department{
+    display: inline-block;
+    margin-left: 0vh; 
+    margin-top: 1vh;
+    display: inline-block;
+}
+
+#Department input {
+    font-size: 2vh;
+    height: 4.5vh;
+    width: 51vh;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: white;
+    padding-left: 2vh;
+    margin-left: 0vh;
+    margin-bottom: 0vh;
+    display: inline-block;
+}
+
+#Department input::placeholder {
+    color: #aaa;
+    padding-left: 0vh;
+    vertical-align: center;
+}
+
+#Department input:focus{
+    outline: none;
+    border: 1px solid white;
+}
+
+#Department input:hover {
+    border: 1px solid white;
+}
+
+#Major{
+    display: inline-block;
+    margin-left: 0vh; 
+    margin-top: 1vh;
+    display: inline-block;
+}
+
+#Major input {
+    font-size: 2vh;
+    height: 4.5vh;
+    width: 51vh;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: white;
+    padding-left: 2vh;
+    margin-left: 0vh;
+    margin-bottom: 4vh;
+    display: inline-block;
+}
+
+#Major input::placeholder {
+    color: #aaa;
+    padding-left: 0vh;
+    vertical-align: center;
+}
+
+#Major input:focus{
+    outline: none;
+    border: 1px solid white;
+}
+
+#Major input:hover {
+    border: 1px solid white;
+}
+
+#Attachment{
+    color: rgb(127,127,127);
+    font-size: 1.7em;
+    font-weight: 600;
+    margin-top: 0vh;
+    margin-left: 0vh;
+    margin-bottom: 2vh;
+}
+
+.insert-link {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 1.5vh;
+    margin-left: 0;
+}
+
+.insert-text {
+    font-size: 2vh;
+    font-weight: 700;
+    color: rgb(157,145,190);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 25vh;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.attachment-button {
+    vertical-align: middle;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hover Effects */
+.insert-link:hover .insert-text {
+    color: rgb(132, 120, 165); /* deeper color */
+    text-decoration: underline;
+}
+
+#AttachmentButton {
+    background-color: transparent;
+    border: none;
+    margin-left: 1vh;
+    padding: 0.5vh;
+    cursor: pointer;
+    border-radius: 1vh;
+    vertical-align: middle;
+    transition: background-color 0.3s ease;
+}
+
+#AttachmentButton img {
+    height: 3vh;
+    width: 3vh;
+    filter: brightness(85%);
+}
+
+/* Hover effect to darken background */
+#AttachmentButton:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#Agreement {
+    margin-left: 0vh;
+    margin-top: 3vh;
+    color: rgb(217,217,217);
+    font-size: 2vh;
+    font-weight: 500;
+}
+
+#Agreement input[type="checkbox"] {
+    appearance: none;
+    width: 2.2vh;
+    height: 2.2vh;
+    border: 2px solid rgb(217,217,217);
+    border-radius: 0.4vh;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    margin-right: 1vh;
+    vertical-align: middle;
+}
+
+#Agreement input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    padding-bottom: -0.1vh;
+    top: 0.2vh;
+    left: 0.6vh;
+    width: 0.5vh;
+    height: 1.2vh;
+    border: solid rgb(217,217,217);
+    border-width: 0 0.3vh 0.3vh 0;
+    transform: rotate(45deg);
+    opacity: 0;
+}
+
+#Agreement input[type="checkbox"]:checked::before {
+    opacity: 1;
+}
+
+#Agreement label {
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#Apply-Button {
+    font-size: 2vh;
+    font-weight:600;
+    background-color: rgb(109, 84, 181);
+    color: white;
+    border: none;
+    border-radius: 1vh;
+    padding: 1vh 3vh;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 0vh;
+    margin-right: 1vh;
+    margin-top: 2vh;
+    width: 24vh;
+    display: inline-block;
+}
+
+#Apply-Button:hover {
+    background-color: rgb(59, 125, 35); /* deeper shade */
+}
+
+#Decline-Button {
+    font-size: 2vh;
+    font-weight:600;
+    background-color: rgb(109, 84, 181);
+    color: white;
+    border: none;
+    border-radius: 1vh;
+    padding: 1vh 3vh;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 0vh;
+    margin-right: 1vh;
+    margin-top: 2vh;
+    width: 24vh;
+    display: inline-block;
+}
+
+#Decline-Button:hover {
+    background-color: rgb(232, 67, 34); /* deeper shade */
+}
+
+#Approval-Row{
+    margin-top: 1vh;
+    margin-left: 0vh;
+    display: flex;
+    gap: 1vh;
+}
+
+#question{
+    vertical-align: top;
+    color: rgb(217,217,217);
+    display: inline-block;
+    font-weight: 530;
+    margin-top: 0.2vh;
+}
+
+#ApprovalStatus a {
+    vertical-align: top;
+    display:inline-block;
+    color: rgb(157,145,190);
+    font-size: 2vh;
+    text-decoration: none;
+    margin-left: 0vh;
+    font-weight: bold;
+}
+
+#ApprovalStatus a:hover {
+    text-decoration: underline;
+    color: rgb(115, 105, 150);
+}
+
+#BackButtonContainer {
+    display: inline-block;
+    margin-left: 2vh;
+    margin-top: 2vh;
+}
+
+#BackButton {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    height: 5vh;
+    width: 5vh;
+    margin-top: 6vh;
+    margin-left: 50vh;
+}
+
+#BackButton img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+#Button-Row{
+    margin-top:11vh;
+}
