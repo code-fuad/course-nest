@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: Arial;
+    border: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: rgb(44, 38, 56);
+}
+
+#Menu{
+    height: 96vh;
+    width: 20vw;
+    margin-top: 2vh;
+    margin-left: 2vh;
+    background-color: rgba(56,51,68.85);
+    box-shadow: 5px 5px 10px black;
+    display: inline-block;
+}
+
+#Home-Link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+#Home-Button {
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    padding: 1vh;
+    cursor: pointer;
+    height: 7vh;
+    width: 7vh;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5.5vh;
+    margin-top: 5vh;
+}
+
+#Home-Button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* subtle hover effect */
+}
+
+#Home-Button img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    filter: brightness(85%);
+}
+
+#Profile-Button {
+    background-color: transparent;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 1vh 2vh;
+    border-radius: 1vh;
+    transition: background-color 0.3s ease;
+    margin-left: 4.8vh;
+    margin-top:10vh;
+    height: 5.5vh;
+    width: 32vh;
+}
+
+#Profile-Button:hover {
+    background-color: rgb(81, 67, 122);
+}
+
+#Profile-Button img {
+    height: 3.5vh;
+    width: 3.5vh;
+    margin-right: 2vh;
+    object-fit: contain;
+    filter: brightness(85%);
+}
+
+#Profile-Button span {
+    color: rgb(217,217,217);
+    font-size: 2.5vh;
+    font-weight: 500;
+}
+
+#Course-Button {
+    background-color: transparent;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 1vh 2vh;
+    padding-left:1.5vh;
+    border-radius: 1vh;
+    transition: background-color 0.3s ease;
+    margin-left: 4.8vh;
+    margin-top:10vh;
+    height: 5.5vh;
+    width: 32vh;
+}
+
+#Course-Button:hover {
+    background-color: rgb(81, 67, 122);
+}
+
+#Course-Button img {
+    height: 4,5vh;
+    width: 4.5vh;
+    margin-right: 1.5vh;
+    object-fit: contain;
+    filter: brightness(85%);
+}
+
+#Course-Button span {
+    color: rgb(217,217,217);
+    font-size: 2.5vh;
+    font-weight: 500;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 4.8vh;
+    margin-top: 2vh;
+}
+
+/* Advising Button (Trigger) */
+#Advising-Button {
+    background-color: transparent;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 1vh 2vh;
+    padding-left: 2.5vh;
+    border-radius: 1vh;
+    transition: background-color 0.3s ease;
+    height: 5.5vh;
+    width: 32vh;
+}
+
+.dropdown:hover #Advising-Button {
+    background-color: rgb(81, 67, 122);
+}
+
+#Advising-Button img {
+    height: 3vh;
+    width: 3vh;
+    margin-right: 2vh;
+    object-fit: contain;
+    filter: brightness(85%);
+}
+
+#Advising-Button span {
+    color: rgb(217,217,217);
+    font-size: 2.5vh;
+    font-weight: 500;
+}
+
+/* Dropdown options container */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 6vh;
+    left: 0;
+    background-color: rgb(96,92,105);
+    border-radius: 1vh;
+    min-width: 32vh;
+    z-index: 100;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
+    padding: 1vh 0;
+}
+
+/* Individual option */
+.dropdown-option {
+    display: flex;
+    align-items: center;
+    padding: 1vh 2vh;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-option img {
+    height: 4vh;
+    width: 4vh;
+    margin-right: 1.5vh;
+    object-fit: contain;
+    filter: brightness(85%);
+}
+
+.dropdown-option span {
+    color: rgb(140,137,147);
+    font-size: 2.3vh;
+    font-weight: 500;
+}
+
+/* Hover effect for options */
+.dropdown-option:hover {
+    background-color: rgb(140,137,147);
+}
+
+.dropdown-option:hover span {
+    color: white;
+}
+
+/* Show dropdown when .active class is added by JS */
+.dropdown.active .dropdown-content {
+    display: block;
+}
+
+
+#registration img {
+    height: 5vh;
+    width: 5vh;
+    margin-left: -0.5vh;
+    margin-right: 1vh;
+}
+
+#offered img {
+    height: 3.5vh;
+    width: 3.5vh;
+    margin-left: 0.3vh;
+    margin-right: 1.7vh;
+}
+
+#request img {
+    height: 3.1vh;
+    width: 3.1vh;
+    margin-left: 0.3vh;
+    margin-right: 2.1vh;
+}
+
+#schedule img {
+    height: 3.5vh;
+    width: 3vh;
+    margin-left: 0.3vh;
+    margin-right: 2.2vh;
+}
+
+#Payment-Button {
+    background-color: transparent;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 1vh 2vh;
+    border-radius: 1vh;
+    transition: background-color 0.3s ease;
+    margin-left: 4.8vh;
+    margin-top:2vh;
+    height: 5.5vh;
+    width: 32vh;
+}
+
+#Payment-Button:hover {
+    background-color: rgb(81, 67, 122);
+}
+
+#Payment-Button img {
+    height: 3.5vh;
+    width: 3.5vh;
+    margin-right: 2vh;
+    object-fit: contain;
+    filter: brightness(85%);
+}
+
+#Payment-Button span {
+    color: rgb(217,217,217);
+    font-size: 2.5vh;
+    font-weight: 500;
+}
+
+#Question-Button {
+    background-color: transparent;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 1vh 2vh;
+    border-radius: 1vh;
+    transition: background-color 0.3s ease;
+    margin-left: 4.8vh;
+    margin-top:2vh;
+    height: 5.5vh;
+    width: 32vh;
+}
+
+#Question-Button:hover {
+    background-color: rgb(81, 67, 122);
+}
+
+#Question-Button img {
+    height: 3.5vh;
+    width: 3.5vh;
+    margin-right: 2vh;
+    object-fit: contain;
+    filter: brightness(85%);
+}
+
+#Question-Button span {
+    color: rgb(217,217,217);
+    font-size: 2.5vh;
+    font-weight: 500;
+}
+
+#LogOut-Button {
+    background-color: transparent;
+    border: none;
+    display: inline-flex;
+    cursor: pointer;
+    padding: 1vh 2vh;
+    border-radius: 1vh;
+    transition: background-color 0.3s ease;
+    margin-left: 4.8vh;
+    margin-top:-10vh;
+    height: 5.5vh;
+    width: 32vh;
+}
+
+#LogOut-Button:hover {
+    background-color: rgb(81, 67, 122);
+}
+
+#LogOut-Button img {
+    height: 3.5vh;
+    width: 3.5vh;
+    margin-right: 2vh;
+    object-fit: contain;
+    filter: brightness(85%);
+}
+
+#LogOut-Button span {
+    color: rgb(217,217,217);
+    font-size: 2.5vh;
+    font-weight: 500;
+}
+
+:root{
+  --brand: rgb(109, 84, 181);
+  --ink: #f7f5ff;
+  --muted: #c9c3da;
+  --line: rgba(255,255,255,.14);
+  --row: rgba(255,255,255,.04);
+  --row-alt: rgba(255,255,255,.06);
+}
+
+/* Wrapper + header (match CourseAdvising proportions) */
+.container{
+  width: min(1100px, 94%);
+  margin-top: -35vh;
+  margin-left: 52vh;
+  color: var(--ink);
+}
+.header{ text-align: center; margin-bottom: 2vh; }
+.header h1{ margin: 0; letter-spacing: .3px; }
+.header p{ margin: .3rem 0 0; color: var(--muted); }
+
+.footer-note{
+  text-align: center;
+  color: var(--muted);
+  margin-top: 2rem;
+  font-size: .95rem;
+}
+
+/* Table wrapper (rounded border & scroll like CourseAdvising) */
+.table-wrap{
+  height: 75vh;
+  background: rgba(255,255,255,.03);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;                /* rounds table corners */
+  box-shadow: 0 10px 24px rgba(0,0,0,.25);
+  overflow-y: auto;                /* mobile horizontal scroll */
+}
+
+/* Table core */
+.course-table{
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 640px;                /* smooth scroll on small screens */
+}
+
+.course-table thead th{
+  background: var(--brand);
+  color: #fff;
+  text-align: left;
+  padding: 1rem 1.1rem;
+  font-weight: 700;
+  letter-spacing: .2px;
+}
+
+.course-table tbody td{
+  padding: .9rem 1.1rem;
+  border-top: 1px solid var(--line);
+  color: #fff;
+}
+
+.course-table tbody tr:nth-child(odd){ background: var(--row); }
+.course-table tbody tr:nth-child(even){ background: var(--row-alt); }
+
+.course-table tbody tr:hover{
+  background: rgba(109,84,181,.18);
+}
+
+/* Responsive tweaks (same as CourseAdvising) */
+@media (max-width: 768px){
+  .header h1{ font-size: 1.35rem; }
+  .header p{ font-size: .95rem; }
+  .course-table thead th,
+  .course-table tbody td{ padding: .8rem .9rem; }
+}
