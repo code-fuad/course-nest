@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: Arial;
+    border: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: rgb(44, 38, 56);
+}
+
+#Dashboard {
+    color: white;
+    font-size: 5vh;
+    font-weight: bold;
+    margin-left: 38vw;
+    margin-top: 25vh;
+}
+
+#UserID-Row{
+    margin-top: 5vh;
+    margin-left: 77.5vh;
+}
+
+#UserID{
+    display: inline-block; 
+    font-size: 1em;
+    font-weight: 500;
+    color: rgb(217,217,217);
+    margin-right: 2vh;
+    margin-top: 1vh;
+    padding-top: 1vh;
+}
+
+#UserText {
+    /* vertical-align: top; */
+    display: inline-block;
+    padding-top: 1vh;
+}
+
+#UserText input {
+    font-size: 2vh;
+    height: 4.5vh;
+    width: 44vh;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: white;
+    padding-left: 2vh;
+}
+
+#UserText input::placeholder {
+    color: #aaa;
+    padding-left: 0vh;
+    vertical-align: center;
+}
+
+#UserText input:focus,
+#PasswordField input:focus {
+    outline: none;
+    border: 1px solid white;
+}
+
+/* Hover effect */
+#UserText input:hover,
+#PasswordField input:hover {
+    border: 1px solid white;
+}
+
+#Login-Button {
+    font-size: 2vh;
+    font-weight:600;
+    background-color: rgb(109, 84, 181);
+    color: white;
+    border: none;
+    border-radius: 1vh;
+    padding: 1vh 3vh;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 76.9vh;
+    margin-top: 2vh;
+    width: 56.5vh;
+    display: block;
+}
+
+#Login-Button:hover {
+    background-color: rgb(180, 165, 225);
+}
+
+#BackButtonContainer {
+    display: inline-block;
+    margin-left: 2vh;
+    margin-top: 2vh;
+}
+
+#BackButton {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    height: 5vh;
+    width: 5vh;
+    margin-top: 41vh;
+    margin-left: 198vh;
+}
+
+#BackButton img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
