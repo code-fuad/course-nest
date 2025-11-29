@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: Arial;
+    border: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: rgb(44, 38, 56);
+}
+
+#ListWindow{
+    height: 90vh;
+    width: 34vw;
+    margin-top: 5vh;
+    margin-left: 33vw;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#navbar{
+    height: 5vh;
+    width: 34vw;
+    background-color: rgb(81,67,122);
+    border-radius: 1vh;
+    margin-bottom: 0.5vh;
+}
+
+#List-Block{
+    height: 83.5vh;
+    width: 34vw;
+    border-radius: 1vh;
+    background-color: rgb(86,81,96);
+    overflow-y: auto;         /* Enables vertical scrolling */
+    overflow-x: hidden; 
+    scrollbar-color: rgb(127,127,127) ;
+}
+
+
+#navphoto {
+    width: 5.5vh;              /* Adjust size as needed */
+    height: 4.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent; /* Optional */
+    padding-left: 1vh;
+    padding-top: 0.5vh;
+    display: inline-block;
+}
+
+#navphoto img {
+    width: 4vh;
+    height: 4vh;
+    object-fit: contain;  /* Keeps aspect ratio */
+}
+
+#navtext{
+    color:white;
+    display: inline-block;
+    vertical-align: top;
+    margin-top:1.4vh;
+    font-size:2vh;
+    font-weight:500;
+}
+
+#home-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 58vh;
+    margin-top: 4vh;
+    padding: 0;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+#home-button:hover {
+    transform: scale(1.1);
+    filter: brightness(120%);
+}
+
+#home-button img {
+    width: 6vh;
+    height: 6vh;
+    object-fit: contain;
+}
