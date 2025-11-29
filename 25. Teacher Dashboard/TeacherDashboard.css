@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: Arial;
+    border: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: rgb(44, 38, 56);
+}
+
+#header
+{
+    height: 30vh;
+    width: 90vw;
+    background-color: rgb(82, 77, 92);
+    margin-top: 5vh;
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+    border-radius: 2vh;
+    vertical-align: top;
+}
+
+#body
+{
+    height: 55vh;
+    width: 70vw;
+    margin-left: 18vw;
+    border-radius: 2vh;
+}
+
+#headText
+{
+    height: 30vh;
+    width: 60vw;
+    margin-top: 0vh;
+    margin-left: 5vh;
+    margin-right: 8vw;
+    padding-top: 10vh;
+    vertical-align: top;
+    display: inline-block;
+}
+
+#picture
+{
+    height: 30vh;
+    width: 18vw;
+    display: inline-block;
+}
+
+#infoBlock
+{
+    height: 50vh;
+    width: 40vw;
+    margin-left: 5vh;
+    margin-top: 2vh;
+    padding-top: 5vh;
+    vertical-align: top;
+    display: inline-block;
+}
+
+#viewBlock
+{
+    height: 20vh;
+    width: 20.5vw;
+    background-color: rgb(82, 77, 92);
+    margin-left: -10vh;
+    margin-top: 2vh;
+    padding-top: 5vh;
+    vertical-align: top;
+    display: inline-block;
+    border-radius: 2vh;
+}
+
+#requestBlock
+{
+    height: 20vh;
+    width: 20.5vw;
+    background-color: rgb(82, 77, 92);
+    margin-left: 5vh;
+    margin-top: 2vh;
+    padding-top: 5vh;
+    vertical-align: top;
+    display: inline-block;
+    border-radius: 2vh;
+}
+
+#date
+{
+    height: 5vh;
+    width: 50vw;
+    margin-top: -7vh;
+    color: white;
+    
+}
+
+#name
+{
+    height: 9vh;
+    width: 50vw;
+    margin-top: 11vh;
+}
+
+#welcome
+{
+    color:white;
+    font-size: 3.5em;
+    font-weight: 700;
+    display: inline-block;
+}
+
+#text
+{
+    color:white;
+    font-size: 3.5em;
+    font-weight: 700;
+    display: inline-block;
+}
+
+#liveDate
+{
+    color:white;
+    font-size: 1.5em;
+    font-weight: 700;
+    display: inline-block;
+}
+
+#profile
+{
+    height: 27vh;
+    width: 27vh;
+    margin-left: 9vh;
+    margin-top: 2vh;
+}
+
+#name1
+{
+    color:white;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+#FullName-Row{
+    margin-top: -4vh;
+    margin-left: 0vh;
+}
+
+#FullName{
+    display: inline-block; 
+    font-size: 1.5em;
+    font-weight: 500;
+    color: rgb(217,217,217);
+    margin-right: 4vh;
+    margin-top: 0.3vh;
+    padding-top: 0.3vh;
+    vertical-align: top;
+}
+
+#FullNameField {
+    display: inline-block;
+    height: 4vh;
+    width: 47.5vh;
+    background-color: rgb(60,54,76);
+    border-radius: 1vh;
+}
+
+#StudentID-Row{
+    margin-top: 2vh;
+    margin-left: 0vh;
+}
+
+#StudentID{
+    display: inline-block; 
+    font-size: 1.5em;
+    font-weight: 500;
+    color: rgb(217,217,217);
+    margin-right: 2vh;
+    margin-top: 0.3vh;
+    padding-top: 0.3vh;
+    vertical-align: top;
+}
+
+#StudentIDField {
+    display: inline-block;
+    height: 4vh;
+    width: 47.5vh;
+    background-color: rgb(60,54,76);
+    border-radius: 1vh;
+}
+
+#Department-Row{
+    margin-top: 2vh;
+    margin-left: 0vh;
+}
+
+#Department{
+    display: inline-block; 
+    font-size: 1.5em;
+    font-weight: 500;
+    color: rgb(217,217,217);
+    margin-right: 2.2vh;
+    margin-top: 0.3vh;
+    padding-top: 0.3vh;
+    vertical-align: top;
+}
+
+#DepartmentField {
+    display: inline-block;
+    height: 4vh;
+    width: 47.5vh;
+    background-color: rgb(60,54,76);
+    border-radius: 1vh;
+}
+
+#Major-Row{
+    margin-top: 2vh;
+    margin-left: 0vh;
+}
+
+#Major{
+    display: inline-block; 
+    font-size: 1.5em;
+    font-weight: 500;
+    color: rgb(217,217,217);
+    margin-right: 7vh;
+    margin-top: 0.3vh;
+    padding-top: 0.3vh;
+    vertical-align: top;
+}
+
+#MajorField {
+    display: inline-block;
+    height: 4vh;
+    width: 47.5vh;
+    background-color: rgb(60,54,76);
+    border-radius: 1vh;
+}
+
+#logOutBtn {
+    background: transparent;   /* no background */
+    border: none;              /* no border */
+    padding: 0;                /* no extra spacing */
+    cursor: pointer;           /* pointer cursor */
+    margin-left: 73vw;
+    margin-top: -3vh;
+}
+
+#logOutBtn img {
+    width: 6vh;   /* adjust size as needed */
+    height: 6vh;
+}
+input[type="text"] {
+    background-color: rgb(60,54,76);
+    border: none;
+    border-radius: 1vh;
+    color: white;
+    font-size: 1.2em;
+    padding-left: 1vh;
+    height: 4vh;
+    width: 47.5vh;
+}
+
+#search{
+    height: 8vh;
+    width: 7vh;
+    margin-left: 18vh;
+    margin-top: -1vh;
+    display: block;
+}
+
+#searchText
+{
+    font-size: 1.6em;
+    margin-left: 14vh;
+    margin-top: 1vh;
+    color: white;
+    font-weight: 600;
+}
+
+#request
+{
+    height: 7vh;
+    width: 7vh;
+    margin-left: 18vh;
+    margin-top: -1vh;
+    margin-bottom: 0.7vh;
+    display: block;
+}
+
+#requestText
+{
+    font-size: 1.6em;
+    margin-left: 13vh;
+    margin-top: 3vh;
+    color: white;
+    font-weight: 600;
+}
+
+#viewBlock:hover {
+    background-color: rgb(102, 97, 112);     /* slightly lighter shade */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#requestBlock:hover {
+    background-color: rgb(102, 97, 112);     /* slightly lighter shade */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#CGPA-Row{
+    margin-top: 2vh;
+    margin-left: 0vh;
+}
+
+#CGPA{
+    display: inline-block; 
+    font-size: 1.5em;
+    font-weight: 500;
+    color: rgb(217,217,217);
+    margin-right: 8.4vh;
+    margin-top: 0.3vh;
+    padding-top: 0.3vh;
+    vertical-align: top;
+}
+
+#CGPAField {
+    display: inline-block;
+    height: 4vh;
+    width: 47.5vh;
+    background-color: rgb(60,54,76);
+    border-radius: 1vh;
+    margin-left: -6.5vh;
+}
