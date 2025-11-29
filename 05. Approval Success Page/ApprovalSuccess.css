@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: Arial;
+    border: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: rgb(44, 38, 56);
+}
+
+#Approval-Row {
+    display: flex;
+    align-items: center;
+    margin-top: 22vh;
+    margin-left: 52vh;
+}
+
+#VerifyIcon {
+    height: 6vh;
+    width: 6vh;
+    object-fit: contain;
+    margin-right: 1.5vh;
+}
+
+#ApprovalText {
+    color: white;
+    font-size: 4.3vh;
+    font-weight: bold;
+}
+
+#StudentID-Row {
+    margin-left: vh;
+    margin-top: 4vh;
+    display: inline-block;
+}
+
+#Text {
+    display: inline-block;
+    font-size: 3.5vh;
+    font-weight: 500;
+    color: rgb(217, 217, 217);
+    margin-right: 1vh;
+}
+
+#StudentID {
+    display: inline-block;
+    font-size: 3.5vh;
+    font-weight: bold;
+    color: white;
+}
+
+#Text-line{
+    font-size: 3vh;
+    font-weight: 500;
+    font-weight: bold;
+    color: rgb(217, 217, 217);
+    margin-right: 1vh;
+    margin-left: 65vh;
+    margin-top:4vh;
+}
+
+#Password-Row {
+    margin-top: 2vh;
+    margin-left: 73vh;
+    margin-bottom: 1vh;
+}
+
+#Password {
+    display: inline-block; 
+    font-size: 1.3em;
+    font-weight: 500;
+    color: rgb(217,217,217);
+    margin-right: 14.2vh;
+    margin-top: 0.8vh;
+}
+
+#PasswordField {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    width: 37vh;
+    height: 4.5vh;
+}
+
+#PasswordField input {
+    font-size: 2vh;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: white;
+    padding-left: 2vh;
+    padding-right: 5vh;
+    border: none;
+    box-sizing: border-box;
+}
+
+#PasswordField input::placeholder {
+    color: #aaa;
+}
+
+#toggle-password {
+    position: absolute;
+    right: 1.2vh;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    height: 2.5vh;
+    width: 2.5vh;
+    z-index: 2;
+}
+
+#toggle-password img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    filter: brightness(85%);
+}
+
+#PasswordField input:focus {
+    outline: none;
+    border: 1px solid white;
+}
+
+#PasswordField input:hover {
+    border: 1px solid white;
+}
+
+#RePassword-Row {
+    margin-top: 2vh;
+    margin-left: 73vh;
+}
+
+#RePassword {
+    display: inline-block; 
+    font-size: 1.3em;
+    font-weight: 500;
+    color: rgb(217,217,217);
+    margin-right: 1.3vh;
+    margin-top: 0.8vh;
+}
+
+#RePasswordField {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    width: 37vh;
+    height: 4.5vh;
+}
+
+#RePasswordField input {
+    font-size: 2vh;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: white;
+    padding-left: 2vh;
+    padding-right: 5vh;
+    border: none;
+    box-sizing: border-box;
+}
+
+#RePasswordField input::placeholder {
+    color: #aaa;
+}
+
+#toggle-repassword {
+    position: absolute;
+    right: 1.2vh;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    height: 2.5vh;
+    width: 2.5vh;
+    z-index: 2;
+}
+
+#toggle-repassword img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    filter: brightness(85%);
+}
+
+#RePasswordField input:focus {
+    outline: none;
+    border: 1px solid white;
+}
+
+#RePasswordField input:hover {
+    border: 1px solid white;
+}
+
+#BankID-Row{
+    margin-top: 4vh;
+    margin-left: 72.9vh;
+}
+
+#BankID{
+    display: inline-block; 
+    font-size: 1.3em;
+    font-weight: 500;
+    color: rgb(217,217,217);
+    margin-right: 6.7vh;
+    margin-top: 1vh;
+}
+
+#BankText {
+    vertical-align: top;
+    display: inline-block;
+}
+
+#BankText input {
+    font-size: 2vh;
+    height: 4.4vh;
+    width: 37.2vh;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: white;
+    padding-left: 2vh;
+}
+
+#BankText input::placeholder {
+    color: #aaa;
+    padding-left: 0vh;
+    vertical-align: center;
+}
+
+#BankText input:focus {
+    outline: none;
+    border: 1px solid white;
+}
+
+/* Hover effect */
+#BankText input:hover {
+    border: 1px solid white;
+}
+
+#BankPassword-Row {
+    margin-top: 2vh;
+    margin-left: 73vh;
+}
+
+#BankPassword {
+    display: inline-block; 
+    font-size: 1.3em;
+    font-weight: 500;
+    color: rgb(217,217,217);
+    margin-right: 5.2vh;
+    margin-top: 0.8vh;
+}
+
+#BankPasswordField {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    width: 37.2vh;
+    height: 4.5vh;
+}
+
+#BankPasswordField input {
+    font-size: 2vh;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: white;
+    padding-left: 2vh;
+    padding-right: 5vh;
+    border: none;
+    box-sizing: border-box;
+}
+
+#BankPasswordField input::placeholder {
+    color: #aaa;
+}
+
+#toggle-Bankpassword {
+    position: absolute;
+    right: 1.2vh;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    height: 2.5vh;
+    width: 2.5vh;
+    z-index: 2;
+}
+
+#toggle-Bankpassword img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    filter: brightness(85%);
+}
+
+#BankPasswordField input:focus {
+    outline: none;
+    border: 1px solid white;
+}
+
+#BankPasswordField input:hover {
+    border: 1px solid white;
+}
+
+#Confirm-Button {
+    font-size: 2vh;
+    font-weight:600;
+    background-color: rgb(109, 84, 181);
+    color: white;
+    border: none;
+    border-radius: 1vh;
+    padding: 1vh 3vh;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 73vh;
+    margin-top: 2vh;
+    width: 67vh;
+    display: block;
+}
+
+#Confirm-Button:hover {
+    background-color: rgb(180, 165, 225);
+}
+
+#BackButtonContainer {
+    display: inline-block;
+    margin-left: 2vh;
+    margin-top: 2vh;
+}
+
+#BackButton {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    height: 5vh;
+    width: 5vh;
+    margin-top: 10vh;
+    margin-left: 198vh;
+}
+
+#BackButton img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
