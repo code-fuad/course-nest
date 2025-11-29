@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: Arial;
+    border: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: rgb(44, 38, 56);
+}
+
+#Verify-Row {
+    display: flex;
+    align-items: center;
+    margin-top: 25vh;
+    margin-left: 70vh;
+}
+
+#VerifyIcon {
+    height: 8vh;
+    width: 8vh;
+    object-fit: contain;
+    margin-right: 1.5vh;
+}
+
+#VerifyText {
+    color: white;
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+#TestPass-Row {
+    margin-left: 84vh;
+    margin-top: 4vh;
+    display: inline-block;
+}
+
+#Text {
+    display: inline-block;
+    font-size: 3.5vh;
+    font-weight: 500;
+    color: rgb(217, 217, 217);
+    margin-right: 1vh;
+}
+
+#TestPass {
+    display: inline-block;
+    font-size: 3.5vh;
+    font-weight: bold;
+    color: white;
+}
+
+#Text-line{
+    font-size: 2vh;
+    font-weight: 500;
+    color: rgb(217, 217, 217);
+    margin-right: 1vh;
+    margin-left: 77vh;
+    margin-top:1vh;
+}
+
+#BackButtonContainer {
+    display: inline-block;
+    margin-left: 138vh;
+    margin-top: 20vh;
+}
+
+#BackButton {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    height: 5vh;
+    width: 5vh;
+    margin-top: 25vh;
+    margin-left: 62vh;
+}
+
+#BackButton img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
