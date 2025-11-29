@@ -1,0 +1,149 @@
+/* ===== Palette (your colors) ===== */
+:root{
+  --bg-1: rgb(44, 38, 56);
+  --bg-2: rgb(60, 54, 76);
+  --brand: rgb(109, 84, 181);
+  --ink: #f7f5ff;
+  --muted: #c9c3da;
+  --line: rgba(255,255,255,.14);
+  --row: rgba(255,255,255,.04);
+  --row-alt: rgba(255,255,255,.06);
+}
+
+/* ===== Page base ===== */
+*{ box-sizing: border-box; }
+html, body { height: 100%; }
+body{
+  margin: 0;
+  color: var(--ink);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Noto Sans", Helvetica, Arial;
+  background:
+    radial-gradient(1200px 700px at 10% -10%, rgba(109,84,181,.18), transparent 60%),
+    radial-gradient(900px 600px at 110% 0%, rgba(60,54,76,.35), transparent 60%),
+    linear-gradient(160deg, var(--bg-1), var(--bg-2));
+}
+#Login-Button {
+    font-size: 2vh;
+    font-weight:600;
+    background-color: rgb(109, 84, 181);
+    color: white;
+    border: none;
+    border-radius: 1vh;
+    padding: 1vh 3vh;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 0vh;
+    margin-top: 1vh;
+    width: 23.5vh;
+    display: block;
+}
+
+#Login-Button:hover {
+    background-color: rgb(180, 165, 225);
+}
+/* ===== Layout ===== */
+.container{
+  width: min(1100px, 94%);
+  margin-left: 45vh;
+  margin-top: -7vh
+}
+
+.header{ text-align: center; margin-bottom: 2vh; }
+.header h1{ margin: 0; letter-spacing: .3px; }
+.header p{ margin: .3rem 0 0; color: var(--muted); }
+
+.footer-note{
+  text-align: center;
+  color: var(--muted);
+  margin-top: 2rem;
+  font-size: .95rem;
+}
+
+/* ===== Table wrapper (for horizontal scroll on mobile) ===== */
+.table-wrap{
+  background: rgba(255,255,255,.03);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;        /* rounds table corners */
+  box-shadow: 0 10px 24px rgba(0,0,0,.25);
+}
+#advising
+{
+    height: 20vh;
+    width: 30vh;
+    display: inline-block;
+    margin-top: 5vh;
+    margin-left: 93vh;
+}
+
+#text
+{
+    color: white;
+    font-size: 1.7em;
+    font-weight: 700;
+    margin-bottom: 0vh;
+}
+
+.table-wrap{ 
+  height: 50vh;
+  overflow-y: auto; 
+}
+
+/* ===== Table ===== */
+.course-table{
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 640px;        /* allows smooth horizontal scroll on small screens */
+}
+
+.course-table thead th{
+  background: var(--brand);
+  color: #fff;
+  text-align: left;
+  padding: 1rem 1.1rem;
+  font-weight: 700;
+  letter-spacing: .2px;
+}
+
+.course-table tbody td{
+  padding: .9rem 1.1rem;
+  border-top: 1px solid var(--line);
+  color: #fff;
+}
+
+.course-table tbody tr:nth-child(odd){ background: var(--row); }
+.course-table tbody tr:nth-child(even){ background: var(--row-alt); }
+
+.course-table tbody tr:hover{
+  background: rgba(109,84,181,.18);
+}
+
+/* ===== Responsive tweaks ===== */
+@media (max-width: 768px){
+  .header h1{ font-size: 1.35rem; }
+  .header p{ font-size: .95rem; }
+  .course-table thead th,
+  .course-table tbody td{ padding: .8rem .9rem; }
+}
+#home-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 200vh;
+    margin-top: 4vh;
+    padding: 0;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+#home-button:hover {
+    transform: scale(1.1);
+    filter: brightness(120%);
+}
+
+#home-button img {
+    width: 6vh;
+    height: 6vh;
+    object-fit: contain;
+    margin-top: 0vh;
+}
