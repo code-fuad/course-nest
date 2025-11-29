@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: Arial;
+    border: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: rgb(44, 38, 56);
+}
+
+#course{
+    height: 20vh;
+    width: 17vw;
+    background-color: rgb(82, 77, 92);
+    margin-top: 0vh;
+    margin-left: 10vh;
+    display: inline-block;
+    border-radius: 2vh;
+    vertical-align: top;
+}
+
+#courseText
+{
+    color: white;
+    font-size: 1.5em;
+    font-weight: Bold;
+    margin-top: 2vh;
+    margin-left: 2vh;
+    
+}
+
+#sectionText
+{
+    color: white;
+    font-size: 1.2em;
+    font-weight: Bold;
+    margin-top: 7vh;
+    margin-left: 2vh;
+    
+}
+
+#studentText
+{
+    color: white;
+    font-size: 1.2em;
+    font-weight: Bold;
+    margin-top: 1vh;
+    margin-left: 2vh;
+    
+}
+
+#home-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 198vh;
+    margin-top: 4vh;
+    padding: 0;
+    transition: transform 0.2s ease, filter 0.2s ease;
+    display: block;
+}
+
+#home-button:hover {
+    transform: scale(1.1);
+    filter: brightness(120%);
+}
+
+#home-button img {
+    width: 6vh;
+    height: 6vh;
+    object-fit: contain;
+}
+
+/* ===== Theme (aligned with the rest of your app) ===== */
+:root{
+  --brand: #6D54B5;
+  --ink: #f7f5ff;
+  --muted: #c9c3da;
+  --line: rgba(255,255,255,.14);
+  --row: rgba(255,255,255,.04);
+  --row-alt: rgba(255,255,255,.06);
+  --card: rgba(255,255,255,.03);
+  --card-hover: rgba(109,84,181,.14);
+}
+
+/* ===== Layout ===== */
+.tc-container{
+  width: min(1100px, 94%);
+  margin: 5vh auto 4vh;
+  color: var(--ink);
+}
+
+.tc-header{
+  text-align: center;
+  margin-bottom: 2.2rem;
+}
+.tc-header h1{
+  margin: 0 0 .2rem 0;
+  letter-spacing: .3px;
+}
+.tc-sub{
+  margin: 0;
+  color: var(--muted);
+}
+.tc-strong{ color: #fff; font-weight: 700; }
+
+.tc-empty{
+  text-align: center;
+  color: var(--muted);
+  padding: 1.25rem 0;
+}
+
+.tc-footer{
+  text-align: center;
+  color: var(--muted);
+  margin-top: 2rem;
+  font-size: .95rem;
+}
+
+/* ===== Card grid ===== */
+.tc-card-grid{
+  display: grid;
+  grid-template-columns: repeat( auto-fill, minmax(320px, 1fr) );
+  gap: 1.4rem;
+}
+
+/* ===== Course card ===== */
+.tc-card{
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1rem 1.1rem;
+  box-shadow: 0 10px 24px rgba(0,0,0,.25);
+  transition: background .25s ease, transform .12s ease;
+}
+.tc-card:hover{
+  background: var(--card-hover);
+  transform: translateY(-1px);
+}
+
+.tc-card-head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .75rem;
+  cursor: pointer;
+}
+
+.tc-card-title{
+  display: grid;
+  gap: .35rem;
+}
+
+.tc-course-line{
+  display: inline-flex;
+  align-items: baseline;
+  gap: .5rem;
+  font-weight: 700;
+  letter-spacing: .2px;
+}
+.tc-course-id {
+    padding: .1rem .5rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    font-size: 1.95rem;
+    background: rgba(255, 255, 255, .06);
+}
+.tc-dot{ opacity: .7; }
+
+.tc-course-name{
+  font-weight: 700;
+}
+
+.tc-meta{
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem .6rem;
+  color: var(--muted);
+  font-size: .95rem;
+}
+.tc-badge{
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  padding: .15rem .55rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255,255,255,.05);
+  color: #fff;
+}
+.tc-sep{ opacity: .5; }
+
+.tc-toggle{
+  border: 1px solid var(--line);
+  background: transparent;
+  color: #fff;
+  padding: .45rem .8rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background .2s ease, border-color .2s ease;
+  margin-top: 15vh;
+}
+.tc-toggle:hover{
+  background: rgba(255,255,255,.08);
+  border-color: #fff;
+}
+
+/* ===== Details (students table) ===== */
+.tc-card-details{
+  display: none;             /* hidden by default */
+  margin-top: .9rem;
+}
+.tc-card-details.open{
+  display: block;
+}
+
+.tc-students-title{
+  font-weight: 700;
+  margin: 0 0 .6rem 0;
+  letter-spacing: .2px;
+}
+
+.tc-table-wrap{
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(255,255,255,.03);
+}
+
+/* Clean table look, consistent with your other pages */
+.tc-student-table{
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 420px;
+}
+.tc-student-table thead th{
+  background: var(--brand);
+  color: #fff;
+  text-align: left;
+  padding: .9rem 1rem;
+  font-weight: 700;
+}
+.tc-student-table tbody td{
+  padding: .75rem 1rem;
+  color: #fff;
+  border-top: 1px solid var(--line);
+}
+.tc-student-table tbody tr:nth-child(odd){ background: var(--row); }
+.tc-student-table tbody tr:nth-child(even){ background: var(--row-alt); }
+.tc-student-table tbody tr:hover{ background: rgba(109,84,181,.18); }
+
+/* Inner empty state */
+.tc-empty-in{
+  color: var(--muted);
+  padding: .4rem 0 .8rem;
+  text-align: left;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px){
+  .tc-card-grid{ grid-template-columns: 1fr; }
+  .tc-student-table{ min-width: 100%; }
+}
+
+.tc-card.active{
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+/* === Aesthetic + Centering Patch (append to end of TeacherCourses.css) === */
+
+/* Center the grid horizontally and keep a tidy fixed card width */
+.tc-card-grid{
+  /* create neatly sized columns and center the whole grid */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 360px));
+  justify-content: center;   /* center tracks within container */
+  justify-items: center;     /* center items within each track */
+}
+
+/* Override legacy #course sizing/margins so grid can center properly */
+#course.tc-card{
+  width: clamp(300px, 32vw, 360px);
+  height: auto;
+  margin: 0;                 /* remove the old left offset */
+  display: block;            /* let CSS grid handle placement */
+}
+
+/* Glow-glass card look with subtle depth */
+.tc-card{
+  background:
+    radial-gradient(120% 140% at 0% 0%, rgba(255,255,255,.06), rgba(255,255,255,.02) 55%),
+    linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,0));
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 16px;
+  padding: 1.1rem 1.2rem;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 12px 26px rgba(0,0,0,.28);
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease, background .18s ease;
+}
+
+.tc-card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 14px 32px rgba(109,84,181,.28), 0 2px 8px rgba(0,0,0,.24);
+  border-color: rgba(255,255,255,.22);
+  background:
+    radial-gradient(120% 140% at 0% 0%, rgba(255,255,255,.09), rgba(255,255,255,.03) 60%),
+    linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,0));
+}
+
+/* Selected state cue */
+.tc-card.active{
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+  box-shadow: 0 16px 36px rgba(109,84,181,.35), 0 4px 10px rgba(0,0,0,.28);
+}
+
+/* Tighter, balanced header */
+.tc-card-head{
+  align-items: flex-start;  /* align title and button nicely */
+}
+
+/* Course pill + name rhythm */
+.tc-course-line{
+  gap: .55rem;
+}
+.tc-course-id{
+  line-height: 1.1;
+  font-weight: 800;
+}
+
+/* Metadata chips spacing */
+.tc-meta{
+  gap: .45rem .6rem;
+}
+
+/* Keep the small control neat (remove big top margin from older rules) */
+.tc-toggle{
+  margin-top: 0;
+  align-self: flex-start;
+}
+
+/* Responsive polish */
+@media (max-width: 768px){
+  #course.tc-card{ width: 100%; }
+}
