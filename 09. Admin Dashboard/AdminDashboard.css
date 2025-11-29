@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: Arial;
+    border: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: rgb(44, 38, 56);
+}
+
+#AdminDisplay{
+    height: 25vh; 
+    width: 50vw; 
+    margin-top: 15vh; 
+    margin-left: 55vh;
+}
+
+#AdminPicture{
+    height: 25vh;
+    width: 25vh; 
+    margin-top: 0vh;
+    margin-left: 2vh;
+    display: inline-block;
+}
+
+#AdminText{
+    height: 25vh;
+    width: 70vh; 
+    margin-top: 0vh;
+    margin-left: 2vh;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#AdminPicture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;       /* Ensures the image fills the circle nicely */
+    display: block;
+}
+
+#Welcome{
+    font-size: 7vh;
+    font-weight: bold;
+    color: white;
+    padding-top: 1vh;
+
+}
+
+#Date{
+    font-size: 2.5vh;
+    font-weight: 600;
+    color: white;
+    margin-top:0vh;
+}
+
+#Option{
+    height:30vh;
+    width:83vw;
+    margin-top: 5vh;
+    margin-left: 20vh;
+}
+
+#FirstRow{
+    height: 28vh;
+    width: 83vw;
+    margin-bottom: 2vh;
+}
+
+#SecondRow{
+    height: 28vh;
+    width: 61vw;
+    margin-left: 28vh;
+}
+
+#Application{
+    height: 30vh;
+    width: 26.667vw;
+    display: inline-block; 
+    vertical-align: top;
+}
+
+#View{
+    height: 30vh;
+    width: 26.667vw;
+    display: inline-block; 
+    vertical-align: top;
+}
+
+#Edit{
+    height: 30vh;
+    width: 26.667vw;
+    display: inline-block; 
+    vertical-align: top;
+}
+
+#System{
+    height: 30vh;
+    width: 26.667vw;
+    display: inline-block; 
+    vertical-align: top;
+}
+
+#Course{
+    height: 30vh;
+    width: 26.667vw;
+    display: inline-block; 
+    vertical-align: top;
+}
+
+#Enquiry{
+    height: 30vh;
+    width: 26.667vw;
+    display: inline-block; 
+    vertical-align: top;
+}
+
+#Block{
+    height: 27vh;
+    width: 23vw;
+    background-color: rgb(86,81,96);
+    margin-left: 3.7vh;
+    border-radius: 3vh;
+    display: inline-block;
+}
+
+#Block:hover {
+    background-color: rgb(106, 101, 116);
+    box-shadow: -4px 6px 4px rgba(0, 0, 0, 0.4), 4px 6px 4px rgba(0, 0, 0, 0.4);
+}
+
+#apply-photo {
+    width: 30vh;              /* or any size you need */
+    height: 17vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 1vh;      
+    background-color: transparent; 
+}
+
+#apply-photo img {
+    height: 9vh;
+    width: 7.5vh;
+    margin-top:4vh;
+    margin-left: 18vh;
+}
+
+#applytext{
+    color: white;
+    font-size: 3vh;
+    font-weight: 500;
+    margin-left: 11.5vh;
+}
+
+#view-photo {
+    width: 30vh;              /* or any size you need */
+    height: 17vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 1vh;      
+    background-color: transparent; 
+}
+
+#view-photo img {
+    height: 9vh;
+    width: 7.5vh;
+    margin-top:4vh;
+    margin-left: 18vh;
+}
+
+#viewtext{
+    color:white;
+    font-size: 3vh;
+    font-weight: 500;
+    margin-left: 13vh;
+}
+
+#edit-photo {
+    width: 30vh;              /* or any size you need */
+    height: 17vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 1vh;      
+    background-color: transparent; 
+}
+
+#edit-photo img {
+    height: 9vh;
+    width: 7.5vh;
+    margin-top:4vh;
+    margin-left: 18vh;
+}
+
+#edittext{
+    color:white;
+    font-size: 3vh;
+    font-weight: 500;
+    margin-left: 13vh;
+}
+
+#system-photo {
+    width: 30vh;              /* or any size you need */
+    height: 17vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 1vh;      
+    background-color: transparent; 
+}
+
+#system-photo img {
+    height: 9vh;
+    width: 10.5vh;
+    margin-top:4vh;
+    margin-left: 18vh;
+}
+
+#systemtext{
+    color:white;
+    font-size: 3vh;
+    font-weight: 500;
+    margin-left: 9vh;
+}
+
+#course-photo {
+    width: 30vh;              /* or any size you need */
+    height: 17vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 1vh;      
+    background-color: transparent; 
+}
+
+#course-photo img {
+    height: 9vh;
+    width: 10.5vh;
+    margin-top:4vh;
+    margin-left: 18vh;
+}
+
+#coursetext{
+    color:white;
+    font-size: 3vh;
+    font-weight: 500;
+    margin-left: 12.5vh;
+}
+
+#enquiry-photo {
+    width: 30vh;              /* or any size you need */
+    height: 17vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 1vh;      
+    background-color: transparent; 
+}
+
+#enquiry-photo img {
+    height: 9vh;
+    width: 10.5vh;
+    margin-top:4vh;
+    margin-left: 18vh;
+}
+
+#enquirytext{
+    color:white;
+    font-size: 3vh;
+    font-weight: 500;
+    margin-left: 12.5vh;
+}
+
+#LogButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    border-radius: 50%;
+    width: 6vh;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+#LogButton:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* subtle hover effect */
+}
+
+#LogButton img {
+    width: 6vh;
+    height: 6vh;
+    margin-top: 25vh;
+    margin-left: 190vw;
+}
