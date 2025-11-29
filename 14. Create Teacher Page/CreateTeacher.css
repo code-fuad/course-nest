@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: Arial;
+    border: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: rgb(44, 38, 56);
+}
+
+#block{
+    height: 85vh;
+    width: 30vw;
+    margin-top: 0vh;
+    margin-left: 35vw;
+    border-radius: 2vh;
+
+    /* blurred white border look */
+    border: none; /* keep actual border off */
+    box-shadow:
+        0 0 0 1px rgba(255,255,255,0.65) inset, /* crisp inner hairline */
+        0 0 8px rgba(255,255,255,0.45);         /* soft outer blur */
+}
+
+#header{
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    margin-left: 17vh;
+    padding-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+#Name{
+    display: inline-block;
+    margin-left: 1vh; 
+}
+
+#Name input {
+    font-size: 2vh;
+    height: 4.5vh;
+    width: 50vh;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: white;
+    padding-left: 2vh;
+    margin-left: 5vh;
+    margin-bottom: 2vh;
+    display: inline-block;
+}
+
+#Name input::placeholder {
+    color: #aaa;
+    padding-left: 0vh;
+    vertical-align: center;
+}
+
+#Name input:focus{
+    outline: none;
+    border: 1px solid white;
+}
+
+#Name input:hover {
+    border: 1px solid white;
+}
+
+#GenderField {
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 6vh;
+    margin-top: 0vh;
+    margin-bottom: 2vh;
+}
+
+#GenderSelect {
+    font-size: 2vh;
+    height: 4.5vh;
+    width: 50vh;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: #aaa;
+    padding-left: 2vh;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 1.5vh center;
+    background-size: 2vh;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#GenderSelect:focus {
+    outline: none;
+    border: 1px solid white;
+}
+
+#GenderSelect:hover {
+    border: 1px solid white;
+}
+
+#DepartmentSelect {
+  font-size: 2vh;
+  height: 4.5vh;
+  width: 50vh;
+  background-color: rgb(60, 54, 76);
+  border-radius: 1vh;
+  color: #aaa; /* Placeholder color */
+  padding-left: 2vh;
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 1.5vh center;
+  background-size: 2vh;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-left: 6vh;
+  margin-bottom: 2vh;
+  transition: color 0.3s ease;
+}
+
+#DepartmentSelect:focus {
+  outline: none;
+  border: 1px solid white;
+}
+
+#DepartmentSelect:hover {
+  border: 1px solid white;
+}
+
+#UserText input:focus,
+#PasswordField input:focus {
+    outline: none;
+    border: 1px solid white;
+}
+
+/* Hover effect */
+#UserText input:hover,
+#PasswordField input:hover {
+    border: 1px solid white;
+}
+
+#Password-Row {
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+}
+
+#Password {
+    display: inline-block; 
+    font-size: 1.5em;
+    font-weight: 500;
+    color: rgb(217,217,217);
+    margin-right: 0.2vh;
+    margin-right: 0.8vh;
+}
+
+#PasswordField {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    width: 50vh;
+    height: 4vh;
+    margin-left: 6vh;
+    margin-bottom: 6vh;
+}
+
+#PasswordField input {
+    font-size: 2vh;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: white;
+    padding-left: 2vh;
+    padding-right: 5vh;
+    border: none;
+    box-sizing: border-box;
+}
+
+#PasswordField input::placeholder {
+    color: #aaa;
+}
+
+#toggle-password {
+    position: absolute;
+    right: 1.2vh;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    height: 2.5vh;
+    width: 2.5vh;
+    z-index: 2;
+}
+
+#toggle-password img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    filter: brightness(85%);
+}
+
+#Apply-Button {
+    font-size: 2vh;
+    font-weight:600;
+    background-color: rgb(109, 84, 181);
+    color: white;
+    border: none;
+    border-radius: 1vh;
+    padding: 1vh 3vh;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 18vh;
+    margin-top: -2vh;
+    width: 25vh;
+    display: block;
+}
+
+#Apply-Button:hover {
+    background-color: rgb(89, 64, 161); /* deeper shade */
+}
+
+#home-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 200vh;
+    margin-top: 4vh;
+    padding: 0;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+#home-button:hover {
+    transform: scale(1.1);
+    filter: brightness(120%);
+}
+
+#home-button img {
+    width: 6vh;
+    height: 6vh;
+    object-fit: contain;
+}
+
+#DOB {
+    display: inline-block;
+    margin-left: -1.2vh;
+    margin-top: 0vh;
+}
+
+#DOB input {
+    font-size: 2vh;
+    height: 4.5vh;
+    width: 50vh;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: #aaa; /* Initial placeholder color */
+    padding-left: 2vh;
+    padding-right: 1.5vh;
+    margin-left: 7.2vh;
+    margin-bottom: 2vh;
+    display: inline-block;
+    border: none;
+    appearance: none;
+}
+
+#DOB input:focus {
+    outline: none;
+    border: 1px solid white;
+}
+
+#DOB input:hover {
+    border: 1px solid white;
+}
+
+#DOB input::-webkit-calendar-picker-indicator {
+    filter: brightness(80%);
+    color: #aaa;
+    opacity: 1;
+}
+
+#DOB input::-webkit-calendar-picker-indicator {
+    filter: brightness(0) saturate(100%) invert(75%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+    opacity: 1;
+}
+
+#DOB input::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+}
