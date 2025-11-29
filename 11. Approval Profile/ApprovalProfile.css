@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(44, 38, 56);
+}
+
+/* Columns */
+#First-Column, #Second-Column, #Third-Column{
+    vertical-align: top;
+    height:96vh;
+    display:inline-block;
+}
+#First-Column{ width:39vw; }
+#Second-Column{ width:30vw; margin-left: -5vh; margin-right: 5vh; }
+#Third-Column{ width:28vw; }
+
+/* Headings */
+#Recovery{
+    display: inline-block;
+    color:white;
+    font-size: 3em;
+    font-weight: Bold;
+    margin-top: 10vh;
+    margin-left: 8vh;
+    margin-bottom: 2vh;
+}
+#Personal{
+    display: inline-block;
+    color: rgb(127,127,127);
+    font-size: 1.7em;
+    font-weight: 600;
+    margin-top: 0vh;
+    margin-left: 8vh;
+    margin-bottom: 2vh;
+}
+
+/* Reusable field group + label */
+.with-label{
+    display: inline-block;
+    margin-left: 8.2vh;       /* align with first name block */
+    margin-bottom: 1vh;
+}
+.field-label{
+    color:white;
+    font-size: 2vh;
+    font-weight: 700;
+    display: inline-block;
+    margin-left:0vh;
+    min-width: 18vh;          /* consistent label width */
+    margin-right: 1vh;
+    vertical-align: middle;
+}
+
+#FirstName{
+    margin-left: 0vh;
+}
+
+#lastNameText{
+    margin-left: 0vh !important;
+}
+/* Keep your original First Name label id but also benefit from class */
+
+/* Inputs (generic) */
+.with-label input,
+#SSCyear input, #SSCgpa input,
+#HSCyear input, #HSCgpa input {
+    font-size: 2vh;
+    height: 4.5vh;
+    background-color: rgb(60, 54, 76);
+    border-radius: 1vh;
+    color: white;
+    padding-left: 2vh;
+    display: inline-block;
+    vertical-align: middle;
+    width: 40vh;              /* unified width for single inputs */
+}
+
+/* Remove all previous left offsets when a label is present */
+.with-label input{ margin-left: 0 !important; }
+
+/* First row name group */
+#Name{ margin-left: 8.2vh; }
+#FirstName{ width: 60vh; display: inline-block; }
+.FirstNameField{ width: 40vh; }
+#LastName{ display: inline-block; margin-left: 0vh; }
+#LastName input{ width: 40vh; }
+
+/* Specific fields that had custom widths originally */
+#StudentContact input{ width: 40vh; }
+#GenderField input{ width: 40vh; }
+#BloodGroup input{ width: 40vh; }
+#DOB input{ width: 40vh; margin-bottom: 0.2vh; }
+#Father input, #Mother input, #Guardian input, #GuardianContact input, #Address input { width: 40vh; }
+
+#DobText{
+    margin-top: 0vh;
+}
+
+/* Academic section title */
+#Academic{
+    display: inline-block;
+    color: rgb(127,127,127);
+    font-size: 1.7em;
+    font-weight: 600;
+    margin-top: 18vh;
+    margin-left: 0vh;
+    margin-bottom: 2vh;
+}
+
+/* SSC/HSC grouped rows */
+#SSC{ margin-left: 0vh; }
+#SSCyear, #SSCgpa, #HSCyear, #HSCgpa{
+    display: inline-block;
+    margin-bottom: 1vh;
+}
+#SSCyear{
+    margin-left: 0vh;
+}
+
+#SSCgpaText{
+    margin-left: -1vh;
+}
+#SSCyear input, #SSCgpa input, #HSCyear input, #HSCgpa input{
+    width: 40vh;
+}
+#SSCgpa{ margin-left: 1vh; }
+
+/* Single-line SSC/HSC fields (now with labels) */
+#SSCroll, #SSCreg, #SSCin, #HSCroll, #HSCreg, #HSCin, #ECA{
+    display: inline-block;
+    margin-left: 0vh;
+    margin-top: 0.5vh;
+}
+
+#HSCyear{
+    margin-left: -0vh;
+}
+
+#HSCGPA{
+    margin-left: -8vh;
+}
+#SSCroll input, #SSCreg input, #SSCin input,
+#HSCroll input, #HSCreg input, #HSCin input, #ECA input{
+    width: 40vh;
+}
+
+/* Degree section */
+#Degree{
+    display: inline-block;
+    color: rgb(127,127,127);
+    font-size: 1.7em;
+    font-weight: 600;
+    margin-top: 18vh;
+    margin-left: 0vh;
+    margin-bottom: 1vh;
+}
+#Department, #Major{
+    display: inline-block;
+    margin-left: 0vh;
+    margin-top: 1vh;
+}
+#Department input, #Major input{ width: 30vh; }
+#Major input{ margin-bottom: 4vh; }
+#MajorText{
+    margin-top: -4vh;
+}
+
+/* Attachments */
+#Attachment{
+    color: rgb(127,127,127);
+    font-size: 1.7em;
+    font-weight: 600;
+    margin-top: 0vh;
+    margin-left: 0vh;
+    margin-bottom: 2vh;
+}
+.insert-link {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 1.5vh;
+    margin-left: 0;
+}
+.insert-text {
+    font-size: 2vh;
+    font-weight: 700;
+    color: rgb(157,145,190);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 25vh;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+.attachment-button {
+    vertical-align: middle;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.insert-link:hover .insert-text {
+    color: rgb(132, 120, 165);
+    text-decoration: underline;
+}
+
+/* Buttons */
+#Apply-Button, #Decline-Button {
+    font-size: 2vh;
+    font-weight:600;
+    background-color: rgb(109, 84, 181);
+    color: white;
+    border: none;
+    border-radius: 1vh;
+    padding: 1vh 3vh;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 0vh;
+    margin-right: 1vh;
+    margin-top: 2vh;
+    width: 24vh;
+    display: inline-block;
+}
+#Apply-Button:hover { background-color: rgb(59, 125, 35); }
+#Decline-Button:hover { background-color: rgb(232, 67, 34); }
+
+#Button-Row{
+    margin-top:6.2vh;
+}
+
+#BackButtonContainer {
+    display: inline-block;
+    margin-left: 2vh;
+    margin-top: 2vh;
+}
+#BackButton {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    height: 5vh;
+    width: 5vh;
+    margin-top: 6vh;
+    margin-left: 50vh;
+}
+#BackButton img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
