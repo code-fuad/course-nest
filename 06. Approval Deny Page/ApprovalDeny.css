@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: Arial;
+    border: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: rgb(44, 38, 56);
+}
+
+#Deny-Row {
+    display: flex;
+    align-items: center;
+    margin-top: 33vh;
+    margin-left: 68vh;
+}
+
+#CrossIcon {
+    height: 6vh;
+    width: 6vh;
+    object-fit: contain;
+    margin-right: 1.5vh;
+}
+
+#DenyText {
+    color: white;
+    font-size: 4.3vh;
+    font-weight: bold;
+}
+
+#Consolation {
+    color: white;
+    font-size: 2vh;
+    font-weight: 500;
+    margin-left: 123vh;
+}
+
+#BackButtonContainer {
+    display: inline-block;
+    margin-left: 2vh;
+    margin-top: 2vh;
+}
+
+#BackButton {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    height: 5vh;
+    width: 5vh;
+    margin-top: 47.5vh;
+    margin-left: 198vh;
+}
+
+#BackButton img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
