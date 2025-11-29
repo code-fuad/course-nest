@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: Arial;
+    border: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: rgb(44, 38, 56);
+}
+
+#row{
+    height: 33vh;
+    width: 60vw;
+    margin-top: 25vh;
+    margin-left: 48vh;
+    vertical-align: top;
+}
+
+#chairman{
+    height: 30vh;
+    width: 24vw;
+    background-color: rgb(86,81,96);
+    display: inline-block;
+    margin-top: 1.5vh;
+    margin-left: 1vw; 
+    border-radius: 3vh;
+    text-align: center; 
+    vertical-align: top;
+}
+
+#teacher{
+    height: 30vh;
+    width: 24vw;
+    background-color: rgb(86,81,96);
+    display: inline-block;
+    margin-top: 1.5vh;
+    margin-left: 4vw; 
+    border-radius: 3vh;
+    text-align: center;
+}
+
+#create_chairman{
+    display: inline-block;
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    margin-top: 10vh;
+}
+
+#home-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 200vh;
+    margin-top: 4vh;
+    padding: 0;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+#home-button:hover {
+    transform: scale(1.1);
+    filter: brightness(120%);
+}
+
+#home-button img {
+    width: 6vh;
+    height: 6vh;
+    object-fit: contain;
+}
+
+#chairman,
+#teacher{
+    cursor: pointer;
+    transition: background-color .2s ease, box-shadow .2s ease, transform .2s ease;
+    position: relative; /* ensures z-index works if needed */
+    z-index: 1;
+}
+
+/* Hover effect for both */
+#chairman:hover,
+#teacher:hover{
+    background-color: rgb(106, 101, 116);   /* clearer change */
+    box-shadow: 0 10px 24px rgba(0,0,0,0.35), 0 2px 8px rgba(0,0,0,0.2);
+    transform: translateY(-3px);
+}
